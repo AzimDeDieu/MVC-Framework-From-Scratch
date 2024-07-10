@@ -1,0 +1,11 @@
+{
+    "require": {
+        "twig/twig": "3.7.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Application\\":"Application/",
+            "Noyau\\":"Noyau/"
+        }
+    }
+}
