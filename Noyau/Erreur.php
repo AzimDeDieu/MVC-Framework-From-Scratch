@@ -2,7 +2,8 @@
 
 namespace Noyau;
 
-use \Application\Configuration;
+use \Application\Configuration; 
+use Noyau\Vue;
 
 class Erreur
 {
@@ -28,7 +29,7 @@ class Erreur
         $chemin = dirname(__DIR__) . "/journaux/" . date("Y-m-d");
 
         ini_set("error_log", $chemin);
-        error_log(static::getInformation($exception));
+        error_log(static::getInformation($exception)); 
     }
     public static function changerErreurEnException($severite, $message, $fichier, $ligne){
         $code_donne = 10;
@@ -50,6 +51,7 @@ class Erreur
             echo self::getInformation($exception);
         }else{
             self::saveInformationDansFichier($exception);
+            Vue::afficher("$code.html");
         }
     }
 }
