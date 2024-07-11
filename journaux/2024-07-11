@@ -1,0 +1,7 @@
+[11-Jul-2024 12:30:48 UTC] 
+        ERREUR FATAL: <br>
+            Fichier de provenance : /var/www/html/MVC-Framework-From-Scratch/publique/index.php <br>
+            Ligne de provenance : 12 <br>
+            Message de l'exception : Division by zero <br> 
+            Classe de l'exception : DivisionByZeroError <br> 
+        
