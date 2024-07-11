@@ -10,7 +10,7 @@ class Vue
     public static function afficher($template, $donnees=[]){
         static $environnement_twig = null;
         if($environnement_twig === null){
-            $repertoire_twig = new FilesystemLoader(dirname(__DIR__) . "/Application/Vue/");
+            $repertoire_twig = new FilesystemLoader(dirname(__DIR__) . "/Application/Vues/");
 
             $environnement_twig = new Environment($repertoire_twig);
         }
