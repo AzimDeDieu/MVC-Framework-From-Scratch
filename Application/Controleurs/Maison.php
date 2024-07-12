@@ -8,6 +8,6 @@ use \Noyau\Vue;
 class Maison extends Controleur
 {
     public function indexAction(){
-        echo "Maison  / index";
+        Vue::afficher("Maison/index.html");
     }
 }
