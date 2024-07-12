@@ -5,9 +5,9 @@ use \Noyau\Controleur;
 
 use \Noyau\Vue;
 
-class PostesExemple extends Controleur
+class Postes extends Controleur
 {
     public function indexAction(){
-        echo "Postes - index";
+        
     }
 }
