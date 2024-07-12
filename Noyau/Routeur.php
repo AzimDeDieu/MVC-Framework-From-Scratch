@@ -71,9 +71,10 @@ class Routeur
             if(preg_match($route, $url_polie, $correspondances)){
                 foreach($correspondances as $cle => $valeur){
                     if(is_string($cle)){
-                        $this->parametre[$cle] = $valeur;
+                        $parametre[$cle] = $valeur;
                     }
                 } 
+                $this->parametre = $parametre;
                 return true;
             }
         }
