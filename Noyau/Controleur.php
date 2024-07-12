@@ -4,7 +4,7 @@ namespace Noyau;
 
 use \Exception;
 
-class Controleur
+abstract class Controleur
 {
     protected $parametre = [];
 
