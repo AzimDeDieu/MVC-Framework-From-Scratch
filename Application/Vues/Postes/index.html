@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block titre %}
+    Liste des postes de la base de données
+{% endblock titre %}
+
+{% block contenu %}
+    <h1>Tous les postes enregistrées dans la base de données :</h1>
+    <ul>
+        {% for poste in postes %}
+            <li>
+                <h2>{{ poste.titre }}</h2>
+                <p>{{ poste.contenu }}</p>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock contenu %}

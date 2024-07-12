@@ -73,8 +73,7 @@ class Routeur
                     if(is_string($cle)){
                         $this->parametre[$cle] = $valeur;
                     }
-                }
-
+                } 
                 return true;
             }
         }

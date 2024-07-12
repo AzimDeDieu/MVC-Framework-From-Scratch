@@ -14,7 +14,8 @@ set_exception_handler("\Noyau\Erreur::changerExceptionEnTemplate");
 
 $instance_routeur = new Routeur();
 $instance_routeur->ajouterRoute("{controleur}/{action}");
-$instance_routeur->ajouterRoute("", ['controleur'=>'exemple2', 'action'=>'afficher']);
+$instance_routeur->ajouterRoute("", ['controleur'=>'Maison', 'action'=>'index']);
+$instance_routeur->ajouterRoute("{controleur}/{id:\d+}/{action}");
 
 $url = $_SERVER['QUERY_STRING'];
 
