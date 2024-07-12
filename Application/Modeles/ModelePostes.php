@@ -5,7 +5,7 @@ use \Noyau\Modele;
 use \PDO;
 use \PDOException;
 
-class Postes extends Modele
+class ModelePostes extends Modele
 {
     public static function getPostes(){
         try{
