@@ -62,8 +62,6 @@ class Routeur
         $route = "/^$route$/"; 
 
         $this->routes[$route]=$parametre; 
-        
-        $this->parametre = $parametre;
     }
 
     public function extraireParametreDe($url_polie){
